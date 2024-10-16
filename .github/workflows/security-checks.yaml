@@ -21,7 +21,7 @@ jobs:
         uses: advanced-security/policy-as-code@v2.9.0
         with:
           # The owner/repo of where the policy is stored
-          policy: adrienpessu-octodemo/security-office
+          policy: DevExpPlatform/required-workflows
           # The local (within the workspace) or repository
           policy-path: policies/default.yaml
           # The branch you want to target
