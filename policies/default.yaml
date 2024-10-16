@@ -1,17 +1,4 @@
-# `general` is used as a default for any missing policy
-general:
-  # The level for general is automatically set to `error` by default by the 
-  #  engine.
-  level: error
-
-# `codescanning` is anything that uses GitHub's Advanced Security feature 
 codescanning:
-  level: error
- 
-# `dependabot` is anything that uses GitHub's Dependabot / Enterprise feature
+  level: medium
 dependabot:
   level: high
-
-# `secretscanning` is anything that uses GitHub's Advanced Security feature 
-secretscanning:
-  level: all
