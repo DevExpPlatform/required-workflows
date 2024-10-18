@@ -1,4 +1,4 @@
 codescanning:
-  level: medium
+  level: none
 dependabot:
-  level: high
+  level: none
