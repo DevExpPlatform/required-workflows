@@ -1,3 +1,5 @@
+general:
+  level: none
 codescanning:
   level: none
 dependabot:
