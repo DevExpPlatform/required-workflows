@@ -31,3 +31,4 @@ jobs:
           policy-path: policies/default.yaml
           # The branch you want to target
           policy-branch: main
+          token: ${{ steps.app-token.outputs.token }}
