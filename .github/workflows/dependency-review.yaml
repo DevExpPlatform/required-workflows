@@ -1,12 +1,20 @@
 name: 'Dependency Review'
-on: [pull_request]
+on:
+  pull_request:
+  workflow_call: # This is a custom event that triggers the workflow
+    inputs:
+      runner:
+        description: "Runner to use"
+        required: false
+        default: "ubuntu-latest"
+        type: string
 
 permissions:
  contents: read
 
 jobs:
   dependency-review:
-    runs-on: ubuntu-latest
+    runs-on: ${{ inputs.runner }}
     steps:
     - name: 'Checkout Repository'
       uses: actions/checkout@v4
